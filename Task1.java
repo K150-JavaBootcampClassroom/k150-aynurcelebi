@@ -43,7 +43,7 @@ public class Task1 {
                 default:
                     System.out.println("Geçersiz işlem yaptınız.. Lütfen Yukarıda bulunan rakamlardan birini seçin!");
             }
-
+        return;
         }
 
 
