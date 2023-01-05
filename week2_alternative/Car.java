@@ -9,7 +9,10 @@ public class Car {
     private int dailyPrice;
     private double luggageCapacity;
 
-    public Car(String brand,int year, String color,int luggageCapacity, int dailyPrice ) {
+    public Car() {
+    }
+
+    public Car(String brand, int year, String color, int luggageCapacity, int dailyPrice ) {
         this.brand = brand;
         this.year = year;
         this.setColor(color);
