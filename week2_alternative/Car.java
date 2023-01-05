@@ -1,28 +1,21 @@
 package week2_alternative;
 
 public class Car {
-
-    private String model;
     private int year;
     private String brand;
+    private String color;
     private int horsePower;
-    private int price;
+    private int mounthPrice;
+    private int dailyPrice;
+    private double luggageCapacity;
 
-    public Car(String model, int year, String brand, int horsePower, int price){
+    public Car(String brand,int year, String color,int luggageCapacity, int dailyPrice ) {
+        this.brand = brand;
+        this.year = year;
+        this.setColor(color);
+        this.luggageCapacity = luggageCapacity;
+        this.dailyPrice = dailyPrice;
 
-        this.setModel(model);
-        this.setBrand(brand);
-        this.setYear(year);
-        this.setHorsePower(horsePower);
-        this.setPrice(price);
-    }
-
-    public String getModel() {
-        return model;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
     }
 
     public int getYear() {
@@ -49,12 +42,35 @@ public class Car {
         this.horsePower = horsePower;
     }
 
-    public int getPrice() {
-        return price;
+    public int getMounthPrice() {
+        return mounthPrice;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
+    public void setMounthPrice(int mounthPrice) {
+        this.mounthPrice = mounthPrice;
+    }
+
+    public int getDailyPrice() {
+        return dailyPrice;
+    }
+
+    public void setDailyPrice(int dailyPrice) {
+        this.dailyPrice = dailyPrice;
+    }
+
+    public double getLuggageCapacity() {
+        return luggageCapacity;
+    }
+
+    public void setLuggageCapacity(double luggageCapacity) {
+        this.luggageCapacity = luggageCapacity;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 }
-

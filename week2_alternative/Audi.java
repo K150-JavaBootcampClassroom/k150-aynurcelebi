@@ -1,4 +1,7 @@
 package week2_alternative;
 
-public class Audi {
+public class Audi extends Car{
+    public Audi(String brand,int year, String color,int luggageCapacity, int dailyPrice){
+        super(brand, year, color, luggageCapacity, dailyPrice);
+    }
 }
