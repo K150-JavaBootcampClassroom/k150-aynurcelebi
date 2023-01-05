@@ -8,5 +8,6 @@ public abstract class CarManager {
     int horsePower;         //Beygir Gücü
 
     public abstract void setRentDay();
+    public abstract void rentCalculate();
 
 }

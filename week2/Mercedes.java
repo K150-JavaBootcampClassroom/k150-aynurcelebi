@@ -6,4 +6,9 @@ public class Mercedes extends CarManager{
     public void setRentDay() {
         System.out.println("Sadece  günlük kiralanabilir");
     }
+
+    @Override
+    public void rentCalculate() {
+        System.out.println("Kiralama Bedeli: "+rentPrice*10);
+    }
 }

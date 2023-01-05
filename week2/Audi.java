@@ -6,4 +6,9 @@ public class Audi extends CarManager{
         System.out.println("Aylık kiralanabilir..");
 
     }
+
+    @Override
+    public void rentCalculate() {
+        System.out.println("Kiralama Bedeli: "+rentPrice*10*30);
+    }
 }

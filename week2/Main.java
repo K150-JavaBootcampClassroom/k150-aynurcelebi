@@ -5,6 +5,10 @@ public class Main {
 
         Mercedes mercedes = new Mercedes();
         mercedes.setRentDay();
+        Citizen citizen = new Citizen();
+        citizen.rent();
+        Company company = new Company();
+        company.rent();
 
     }
 }

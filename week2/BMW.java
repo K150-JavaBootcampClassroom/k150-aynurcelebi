@@ -5,4 +5,9 @@ public class BMW extends CarManager{
     public void setRentDay() {
         System.out.println("Günlük kiralanabilir");
     }
+
+    @Override
+    public void rentCalculate() {
+        System.out.println("Kiralama Bedeli: "+rentPrice*15);
+    }
 }
