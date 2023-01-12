@@ -1,32 +1,25 @@
 package week2_alternative;
 
 public class Car {
-    private int year;
+    private int doorCount = 4;
+    private String color = "White";
     private String brand;
-    private String color;
-    private int horsePower;
-    private int mounthPrice;
-    private int dailyPrice;
-    private double luggageCapacity;
+    private int hp = 84;
 
-    public Car() {
+    public int getDoorCount() {
+        return doorCount;
     }
 
-    public Car(String brand, int year, String color, int luggageCapacity, int dailyPrice ) {
-        this.brand = brand;
-        this.year = year;
-        this.setColor(color);
-        this.luggageCapacity = luggageCapacity;
-        this.dailyPrice = dailyPrice;
-
+    public void setDoorCount(int doorCount) {
+        this.doorCount = doorCount;
     }
 
-    public int getYear() {
-        return year;
+    public String getColor() {
+        return color;
     }
 
-    public void setYear(int year) {
-        this.year = year;
+    public void setColor(String color) {
+        this.color = color;
     }
 
     public String getBrand() {
@@ -37,43 +30,13 @@ public class Car {
         this.brand = brand;
     }
 
-    public int getHorsePower() {
-        return horsePower;
+    public int getHp() {
+        return hp;
     }
 
-    public void setHorsePower(int horsePower) {
-        this.horsePower = horsePower;
+    public void setHp(int hp) {
+        this.hp = hp;
     }
 
-    public int getMounthPrice() {
-        return mounthPrice;
-    }
 
-    public void setMounthPrice(int mounthPrice) {
-        this.mounthPrice = mounthPrice;
-    }
-
-    public int getDailyPrice() {
-        return dailyPrice;
-    }
-
-    public void setDailyPrice(int dailyPrice) {
-        this.dailyPrice = dailyPrice;
-    }
-
-    public double getLuggageCapacity() {
-        return luggageCapacity;
-    }
-
-    public void setLuggageCapacity(double luggageCapacity) {
-        this.luggageCapacity = luggageCapacity;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
 }
